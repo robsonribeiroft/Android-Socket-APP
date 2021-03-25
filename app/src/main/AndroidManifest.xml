@@ -16,7 +16,7 @@
         android:usesCleartextTraffic="true"
         android:largeHeap="true"
         android:theme="@style/Theme.PPDProject"
-        android:name=".SocketInstance">
+        android:name=".App">
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>

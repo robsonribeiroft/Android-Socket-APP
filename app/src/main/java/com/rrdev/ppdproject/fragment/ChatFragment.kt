@@ -44,7 +44,7 @@ class ChatFragment: Fragment() {
             if(event.action == MotionEvent.ACTION_UP) {
                 if(event.rawX >= binding.editInput.dimensDrawableEnd()) {
                     // your action here
-                    viewModel.sendMessageToChat(binding.editInput.extractText())
+                   // viewModel.sendMessageToChat(binding.editInput.extractText())
                     return@setOnTouchListener true
                 }
             }

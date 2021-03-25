@@ -1,11 +1,7 @@
 package com.rrdev.ppdproject.viewmodel
 
 import android.app.Application
-import android.util.Log
 import androidx.lifecycle.AndroidViewModel
-import com.github.nkzawa.socketio.client.Socket
-import com.rrdev.ppdproject.SocketInstance
-import com.rrdev.ppdproject.mapper.Mapper
 import com.rrdev.ppdproject.model.ChatMessage
 import kotlinx.coroutines.flow.MutableStateFlow
 
@@ -15,8 +11,9 @@ class SocketViewModel(
 
     var userName: String = ""
     val chatState = MutableStateFlow(ChatMessage("System", "Start Chat"))
-    private val mSocket: Socket? = (app as SocketInstance).getSocket()
+    //private val mSocket: Socket? = (app as SocketInstance).getSocket()
 
+/*
     fun init(){
         registerEventConnect()
         registerEventDisconnect()
@@ -61,5 +58,6 @@ class SocketViewModel(
     companion object{
         const val TAG = "SVM"
     }
+*/
 
 }
